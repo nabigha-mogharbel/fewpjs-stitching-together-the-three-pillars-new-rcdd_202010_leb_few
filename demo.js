@@ -17,7 +17,7 @@ let colorStates = {
 // let articleHearts = document.querySelectorAll(".like-glyph");
 
 function likeCallback(e) {
-  let articleheart = e.target;
+  let articleheart = document.querySelectorAll(".like-glyph");
   mimicServerCall()
     .then(function(serverMessage){
       // STEP 2: Uncomment the next 3 lines.
@@ -39,9 +39,9 @@ function likeCallback(e) {
 // code when an "event" is fired. That's Pillar 2, event handling. Uncomment
 // this code.
 
-//for (let glyph of articleHearts) {
+for (let glyph of articleHearts) {
   //glyph.addEventListener("click", likeCallback);
-//}
+}
 
 // STEP 4: 
 
